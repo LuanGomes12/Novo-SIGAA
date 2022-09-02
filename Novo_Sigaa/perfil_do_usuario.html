@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>UFC - SIGAA -  Sistema Integrado de Gestão de Atividades Acadêmicas</header>
+    <nav>
+        <a href="painel_de_controle.html">Painel de Controle</a>
+        <a href="perfil_do_usuario.html">Editar informações</a>
+        <a href="historico.html">Histórico</a>
+        <a href="cadastro_de_materias.html">Cadastro de Componentes Curriculares</a>
+    </nav>
+
+    <br>
+    <h2>Perfil do Usuário</h2>
+
+    <form name="form_login" action="painel_de_controle.html" method="POST">
+        Matrícula: <input type="number" name="numero" value=""><br/>
+        Nome: <input type="text" name="nome" value=""><br/>
+        Curso: <input type="text" name="curso" value=""><br/>
+        Sexo: <input type="text" maxlength="1" name="sexo" value=""><br/>
+        Data de Nascimento: <input type="date" name="data" value=""><br/>
+        CPF: <input type="number" name="cpf" value=""><br/>
+        <input type="submit" value="Salvar informações">
+    </form>
+    <footer>SIGAA|Copyright @ 2010 - 2022 - Superintendência de Tecnologia da Informação - UFC</footer>
+</body>
+</html>
