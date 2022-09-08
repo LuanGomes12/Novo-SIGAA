@@ -7,6 +7,7 @@
     <title>Painel de Controle</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <header>UFC - SIGAA -  Sistema Integrado de Gestão de Atividades Acadêmicas</header>
     <nav>
@@ -16,44 +17,47 @@
         <a href="cadastro_de_materias.html">Cadastro de Componentes Curriculares</a>
     </nav>
     <br>
-    <h2>Painel de Controle</h2>
-    <br>
-
-    <img src="FotoDePerfil.jpg"">
-    <b>Luan Gomes Magalhães Lima</b>
-    <a href="mailto:luangomes@alu.ufc.br"><p>luangomes@alu.ufc.br</p></a>
-    <p>Matrícula: 473008</p>
-    <p>Curso: Engenharia de Computação</p>
-    <p>IRA: 9.0</p>
-    <p>Créditos cursados: 210</p>
+    <h2>Painel de Controle</h2><br>
+    <div id="div-p1">
+        <img src="FotoDePerfil.jpg" width="150" height="150">
+        <br><b>Luan Gomes Magalhães Lima | Matrícula: 473008 | IRA: 9.00</b>
+        <a href="mailto:luangomes@alu.ufc.br"><p>luangomes@alu.ufc.br</p></a>
+        <p>Curso: Engenharia de Computação</p>
+        <p>Créditos cursados: 210</p>
+    </div>
 
     <br>
-    <b>Escolha a cor: <input type="color"></b>
+    <h3 id="h3-display">Escolha a cor: <input type="color"></h3>
     <br>
 
     <h3>Matérias</h3>
-    <ul>
-        <a href="#"><li>Tecnologias Web</li></a>
-        <a href="#"><li>Química Geral</li></a>
-        <a href="#"><li>Empreendedorismo e Administração de empresas</li></a>
-        <a href="#"><li>Higiene Industrial e Segurança no Trabalho</li></a>
-        <a href="#"><li>Engenharia Econômica</li></a>
-    </ul>
+    <div id="div-p2">
+        <ul>
+            <li><a class="mat" href="">ECO0056 - Tecnologias Web</a></li>
+            <li><a class="mat" href="">SBL0087 - Química Geral</a></li>
+            <li><a class="mat" href="">ECO0078 - Empreendedorismo e Administração de empresas</a></li>
+            <li><a class="mat" href="">SBL0078 - Higiene Industrial e Segurança no Trabalho</a></li>
+            <li><a class="mat" href="">SBL0071 - Engenharia Econômica</a></li>
+            <li><a class="mat" href="">SBL0091 - Sistemas Lineares</a></li>
+        </ul>
+    </div>
     <br>
 
     <h3>Progresso no curso</h3>
-    <label for="file">Disciplinas obrigatórias:</label>
-    <progress id="file" value="85" max="100"> 85% </progress>
-    <label for="file">Disciplinas eletivas:</label>
-    <progress id="file" value="60" max="100"> 60% </progress>
-    <label for="file">Horas de estágio obrigatório:</label>
-    <progress id="file" value="25" max="100"> 25% </progress>
-    <label for="file">Horas complementares:</label>
-    <progress id="file" value="100" max="100"> 90% </progress>
-    <label for="file">Horas de extensão:</label>
-    <progress id="file" value="75" max="100"> 75% </progress>
-    <label for="file">Horas de programação:</label>
-    <progress id="file" value="15" max="100"> 15% </progress>
+    <div id="div-p3">
+        <label for="file">Disciplinas obrigatórias:</label>
+        <progress id="file" value="85" max="100"> 85% </progress><br>
+        <label for="file">Disciplinas eletivas:</label>
+        <progress id="file" value="60" max="100"> 60% </progress><br>
+        <label for="file">Horas de estágio obrigatório:</label>
+        <progress id="file" value="25" max="100"> 25% </progress><br>
+        <label for="file">Horas complementares:</label>
+        <progress id="file" value="100" max="100"> 90% </progress><br>
+        <label for="file">Horas de extensão:</label>
+        <progress id="file" value="75" max="100"> 75% </progress><br>
+        <label for="file">Horas de programação:</label>
+        <progress id="file" value="15" max="100"> 15% </progress><br>
+    </div>
     <br>
 
     <table border="1">
@@ -77,6 +81,10 @@
             <td>Horas de estágio obrigatório</td>
         </tr>
     </table>
+    
+    <a href="index.html">
+        <button style="position: absolute; left:95%; top:5%; color: rgb(243, 26, 63); font-size: 20px; border-radius: 5px; background-color: rgb(194, 241, 226);">SAIR</button>
+    </a>
 
     <footer>SIGAA|Copyright @ 2010 - 2022 - Superintendência de Tecnologia da Informação - UFC</footer>
 </body>
